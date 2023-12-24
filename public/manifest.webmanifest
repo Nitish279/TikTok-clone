@@ -2,34 +2,34 @@
   "theme_color": "#000000",
   "background_color": "#FFFFFF",
   "display": "standalone",
-  "scope": "./",
-  "start_url": "./TikTok-clone/",
+  "scope": "/",
+  "start_url": "./",
   "name": "TikTok",
   "short_name": "TikTok Clone",
   "description": "short video app",
   "icons": [
     {
-      "src": "./TikTok-clone/icon-192x192.png",
+      "src": "./icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "./TikTok-clone/icon-256x256.png",
+      "src": "./icon-256x256.png",
       "sizes": "256x256",
       "type": "image/png"
     },
     {
-      "src": "./TikTok-clone/icon-384x384.png",
+      "src": "./icon-384x384.png",
       "sizes": "384x384",
       "type": "image/png"
     },
     {
-      "src": "./TikTok-clone/icon-512x512.png",
+      "src": "./icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
   ],
   "serviceworker": {
-    "src": "./TikTok-clone/service-worker.js"
+    "src": "./service-worker.js"
   }
 }
