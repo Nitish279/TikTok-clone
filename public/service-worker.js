@@ -6,7 +6,7 @@ const CACHE_EXPIRATION_SECONDS = CACHE_EXPIRATION_DAYS * 24 * 60 * 60; // Conver
 const staticAssets = [
   "/",
   "/index.html",
-  "static/css/main.chunk.css",
+  "/static/css/main.chunk.css",
   "/static/js/bundle.js",
   "/static/js/0.chunk.js",
   "/static/js/1.chunk.js",
@@ -14,17 +14,6 @@ const staticAssets = [
   "static/media/tiktok-logo-small.8fb50fcb18e1f9bc7082.webp",
   "static/media/tiktok-logo.0148e250a3e768af5ea2.webp",
   "/manifest.json",
-  "/proxy/https://randomuser.me/api/portraits/men/1.jpg",
-  "/proxy/https://randomuser.me/api/portraits/women/2.jpg",
-  "/proxy/https://randomuser.me/api/portraits/women/3.jpg",
-  "/proxy/https://randomuser.me/api/portraits/men/4.jpg",
-  "/proxy/https://randomuser.me/api/portraits/women/5.jpg",
-  "/proxy/https://randomuser.me/api/portraits/men/6.jpg",
-  "/proxy/https://randomuser.me/api/portraits/men/7.jpg",
-  "/proxy/https://randomuser.me/api/portraits/women/8.jpg",
-  "/proxy/https://randomuser.me/api/portraits/men/9.jpg",
-  "/proxy/https://randomuser.me/api/portraits/women/10.jpg",
-  "/proxy/https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4",
 ];
 
 let deferredPrompt;
