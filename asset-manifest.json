@@ -1,15 +1,21 @@
 {
   "files": {
-    "main.css": "/TikTok-clone/static/css/main.d73071dc.css",
-    "main.js": "/TikTok-clone/static/js/main.3d12c914.js",
-    "static/media/tiktok-logo-small.webp": "/TikTok-clone/static/media/tiktok-logo-small.8fb50fcb18e1f9bc7082.webp",
-    "static/media/tiktok-logo.webp": "/TikTok-clone/static/media/tiktok-logo.e8a63978038ce47c2c9f.webp",
-    "index.html": "/TikTok-clone/index.html",
-    "main.d73071dc.css.map": "/TikTok-clone/static/css/main.d73071dc.css.map",
-    "main.3d12c914.js.map": "/TikTok-clone/static/js/main.3d12c914.js.map"
+    "main.css": "/static/css/main.d73071dc.css",
+    "main.js": "/static/js/main.5474413e.js",
+    "static/media/video2.mp4": "/static/media/video2.f25065386de52f67decf.mp4",
+    "static/media/video4.mp4": "/static/media/video4.265f8373844db09c29a4.mp4",
+    "static/media/video1.mp4": "/static/media/video1.087492876498b717b80b.mp4",
+    "static/media/video6.mp4": "/static/media/video6.2b354f73e2b7e2ae7261.mp4",
+    "static/media/video5.mp4": "/static/media/video5.17a8951bbbd9b846d7f1.mp4",
+    "static/media/video3.mp4": "/static/media/video3.b847d15d149259ce1b42.mp4",
+    "static/media/tiktok-logo-small.webp": "/static/media/tiktok-logo-small.8fb50fcb18e1f9bc7082.webp",
+    "static/media/tiktok-logo.webp": "/static/media/tiktok-logo.e8a63978038ce47c2c9f.webp",
+    "index.html": "/index.html",
+    "main.d73071dc.css.map": "/static/css/main.d73071dc.css.map",
+    "main.5474413e.js.map": "/static/js/main.5474413e.js.map"
   },
   "entrypoints": [
     "static/css/main.d73071dc.css",
-    "static/js/main.3d12c914.js"
+    "static/js/main.5474413e.js"
   ]
 }
