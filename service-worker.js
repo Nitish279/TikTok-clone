@@ -31,20 +31,7 @@ let deferredPrompt;
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
-      return Promise.all(
-        staticAssets.map((url) => {
-          return fetch(url)
-            .then((response) => {
-              if (!response.ok) {
-                throw new Error(`Failed to fetch: ${url}`);
-              }
-              return cache.put(url, response);
-            })
-            .catch((error) => {
-              console.error(`Failed to fetch and cache: ${url}`, error);
-            });
-        })
-      );
+      return cache.addAll(staticAssets);
     })
   );
 });
