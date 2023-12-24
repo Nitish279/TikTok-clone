@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import testVideo from "../videos/149928.mp4";
 
 const VideoPlayer = ({ post }) => {
   const videoRef = useRef(null);
@@ -44,7 +43,7 @@ const VideoPlayer = ({ post }) => {
       loading="lazy"
       className="rounded-xl object-cover mx-auto h-full"
     >
-      <source src={testVideo} type="video/mp4" />
+      <source src={`./videos/${post?.video_url}.mp4`} type="video/mp4" />
       Your browser does not support the video tag.
     </video>
   );
