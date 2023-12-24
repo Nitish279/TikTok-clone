@@ -3,16 +3,17 @@ const DYNAMIC_CACHE_NAME = "TikTok-clone-dynamic-cache";
 const CACHE_EXPIRATION_DAYS = 7; // Set the cache expiration period in days
 const CACHE_EXPIRATION_SECONDS = CACHE_EXPIRATION_DAYS * 24 * 60 * 60; // Convert days to seconds
 
-const staticAssets = ["/"];
+// const staticAssets = ["/"];
 
 let deferredPrompt;
 
 self.addEventListener("install", (event) => {
-  event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(staticAssets);
-    })
-  );
+  event
+    .waitUntil
+    // caches.open(CACHE_NAME).then((cache) => {
+    //   return cache.addAll(staticAssets);
+    // })
+    ();
 });
 
 self.addEventListener("activate", (event) => {
