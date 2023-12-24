@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/TikTok-clone/static/css/main.d73071dc.css",
+    "main.js": "/TikTok-clone/static/js/main.3d12c914.js",
+    "static/media/tiktok-logo-small.webp": "/TikTok-clone/static/media/tiktok-logo-small.8fb50fcb18e1f9bc7082.webp",
+    "static/media/tiktok-logo.webp": "/TikTok-clone/static/media/tiktok-logo.e8a63978038ce47c2c9f.webp",
+    "index.html": "/TikTok-clone/index.html",
+    "main.d73071dc.css.map": "/TikTok-clone/static/css/main.d73071dc.css.map",
+    "main.3d12c914.js.map": "/TikTok-clone/static/js/main.3d12c914.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d73071dc.css",
+    "static/js/main.3d12c914.js"
+  ]
+}
