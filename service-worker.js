@@ -3,18 +3,7 @@ const DYNAMIC_CACHE_NAME = "TikTok-clone-dynamic-cache";
 const CACHE_EXPIRATION_DAYS = 7; // Set the cache expiration period in days
 const CACHE_EXPIRATION_SECONDS = CACHE_EXPIRATION_DAYS * 24 * 60 * 60; // Convert days to seconds
 
-const staticAssets = [
-  "/",
-  "/index.html",
-  "/static/css/main.chunk.css",
-  "/static/js/bundle.js",
-  "/static/js/0.chunk.js",
-  "/static/js/1.chunk.js",
-  "/favicon.ico",
-  "static/media/tiktok-logo-small.8fb50fcb18e1f9bc7082.webp",
-  "static/media/tiktok-logo.0148e250a3e768af5ea2.webp",
-  "/manifest.json",
-];
+const staticAssets = ["/"];
 
 let deferredPrompt;
 
