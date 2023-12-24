@@ -24,7 +24,7 @@ const App = () => {
         <Router>
           <Suspense fallback={<SplashScreen />}>
             <Routes>
-              <Route path="/" element={<MainLayout />} />
+              <Route path="/" exact element={<MainLayout />} />
               <Route path="/login" element={<Login />} />
               <Route path="/upload" element={<Upload />} />
             </Routes>

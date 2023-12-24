@@ -43,7 +43,7 @@ const VideoPlayer = ({ post }) => {
       loading="lazy"
       className="rounded-xl object-cover mx-auto h-full"
     >
-      <source src={`./videos/${post?.video_url}.mp4`} type="video/mp4" />
+      <source src={post?.video_url} type="video/mp4" />
       Your browser does not support the video tag.
     </video>
   );
