@@ -7,7 +7,7 @@ const PostShare = ({ shareCount }) => {
       <div className="rounded-full bg-gray-200 p-2 cursor-pointer">
         <FaShare size="25" />
       </div>
-      <span className="text-xs text-gray-800 font-semibold">{shareCount}</span>
+      <span className="text-base text-white font-semibold">{shareCount}</span>
     </button>
   );
 };

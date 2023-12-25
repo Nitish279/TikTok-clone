@@ -5,8 +5,11 @@ import PostShare from "./PostShare";
 
 const PostMainLikes = ({ post }) => {
   return (
-    <div id={`PostMainLikes-${post?.id}`} className="mr-[75px]">
-      <div className="absolute bottom-0 pl-2">
+    <div
+      id={`PostMainLikes-${post?.id}`}
+      className="absolute bottom-25 right-0 p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+    >
+      <div className="flex flex-col items-center justify-center">
         <PostLikes
           likes={post.likes}
           userLiked={post.userLiked}

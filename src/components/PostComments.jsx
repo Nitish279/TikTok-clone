@@ -11,9 +11,7 @@ const PostComments = ({ commentCount }) => {
       <div className="rounded-full bg-gray-200 p-2 cursor-pointer">
         <FaCommentDots size="25" />
       </div>
-      <span className="text-xs text-gray-800 font-semibold">
-        {commentCount}
-      </span>
+      <span className="text-base text-white font-semibold">{commentCount}</span>
     </button>
   );
 };

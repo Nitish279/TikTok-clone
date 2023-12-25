@@ -15,7 +15,7 @@ const PostLikes = ({ likes, userLiked, hasClickedLike, likeOrUnlike }) => {
 
   const buttonId = "likePostButton";
   return (
-    <div className="pb-4 text-center">
+    <div className="flex flex-col items-center justify-center pb-4 text-center ">
       <button
         id={Math.floor(Math.random() * 1000000)}
         aria-describedby={`description for ${Math.floor(
@@ -34,7 +34,7 @@ const PostLikes = ({ likes, userLiked, hasClickedLike, likeOrUnlike }) => {
       </button>
       <span
         id={`${buttonId}-description`}
-        className="text-xs text-gray-800 font-semibold"
+        className="text-base text-white font-semibold"
       >
         {likes?.length}
       </span>

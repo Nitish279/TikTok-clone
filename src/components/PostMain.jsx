@@ -7,12 +7,12 @@ import PostMainLikes from "./PostMainLikes";
 
 const PostMain = ({ post }) => {
   return (
-    <div id={`PostMain-${post.id}`} className="flex border-b py-6">
+    <div id={`PostMain-${post.id}`} className="flex border-b py-6 group">
       <UserAvatar profile={post.profile} />
       <div className="pl-3 w-full px-4">
         <PostDetail post={post} />
         <br />
-        <div className="relative min-h-[480px] max-h-[580px] max-w-[260px] flex items-center bg-black rounded-xl cursor-pointer">
+        <div className="relative min-h-[460px] max-h-[580px] max-w-[300px] flex items-center bg-black rounded-xl cursor-pointer group">
           <VideoPlayer post={post} />
           <PostMainLikes post={post} />
         </div>
