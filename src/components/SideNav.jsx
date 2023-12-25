@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import MenuItem from "./MenuItem";
 import MenuItemFollow from "./MenuItemFollow";
 
-const SideNav = () => {
+const SideNav = ({ isMobile, closeSideNav }) => {
   const location = useLocation();
   const pathname = location.pathname;
 
@@ -18,7 +18,7 @@ const SideNav = () => {
                 `}
       >
         <div className="lg:w-full w-[55px] mx-auto">
-          <Link href="/">
+          <Link href="/" onClick={isMobile ? closeSideNav : undefined}>
             <MenuItem
               iconString="For You"
               colorString={pathname === "/" ? "#0000FF" : ""}

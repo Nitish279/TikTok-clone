@@ -16,7 +16,9 @@ const TopNav = () => {
         >
           <BrandLogo />
           <SearchBar />
-          <TopNavButtons />
+          <div className="hidden md:block">
+            <TopNavButtons />
+          </div>
         </div>
       </div>
     </>

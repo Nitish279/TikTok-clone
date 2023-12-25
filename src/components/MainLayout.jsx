@@ -1,5 +1,6 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useState } from "react";
 import { useLocation } from "react-router-dom";
+import { FaBars } from "react-icons/fa";
 
 import TopNav from "./TopNav";
 import SideNav from "./SideNav";
@@ -12,7 +13,13 @@ const MainLayout = () => {
   const location = useLocation();
   const pathname = location.pathname;
 
+  const [isSideNavOpen, setIsSideNavOpen] = useState(false);
+
   const memoizedPosts = useMemo(() => posts, []);
+
+  const closeSideNav = () => {
+    setIsSideNavOpen(false);
+  };
 
   return (
     <>
@@ -24,8 +31,18 @@ const MainLayout = () => {
           pathname === "/" ? "max-w-[1140px]" : ""
         }`}
       >
-        <SideNav />
-        <div className="mt-[80px] w-[calc(100%-90px)] max-w-[690px] ml-auto">
+        {isSideNavOpen && (
+          <div className="lg:hidden fixed top-0 left-0 h-full w-full bg-white z-30">
+            <SideNav isMobile closeSideNav={closeSideNav} />
+          </div>
+        )}
+
+        {/* SideNav for desktop */}
+        <div className={`lg:flex ${isSideNavOpen ? "block" : "hidden"}`}>
+          <SideNav />
+        </div>
+
+        <div className="mt-[80px] max-w-[690px] lg:w-[calc(100%-90px)] ml-auto lg:pl-0 lg:pr-0 sm:pl-0 sm:pr-2">
           {memoizedPosts.map((post) => (
             <PostMain post={post} key={post.id} />
           ))}
