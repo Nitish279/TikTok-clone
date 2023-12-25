@@ -1,6 +1,5 @@
 import React, { useMemo, useState } from "react";
 import { useLocation } from "react-router-dom";
-import { FaBars } from "react-icons/fa";
 
 import TopNav from "./TopNav";
 import SideNav from "./SideNav";
@@ -37,7 +36,6 @@ const MainLayout = () => {
           </div>
         )}
 
-        {/* SideNav for desktop */}
         <div className={`lg:flex ${isSideNavOpen ? "block" : "hidden"}`}>
           <SideNav />
         </div>
