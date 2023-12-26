@@ -14,7 +14,9 @@ const PostMain = ({ post }) => {
         <br />
         <div className="relative min-h-[460px] max-h-[580px] max-w-[300px] flex items-center bg-black rounded-xl cursor-pointer group">
           <VideoPlayer post={post} />
-          <PostMainLikes post={post} />
+          <div className="hidden sm:block">
+            <PostMainLikes post={post} />
+          </div>
         </div>
       </div>
     </div>

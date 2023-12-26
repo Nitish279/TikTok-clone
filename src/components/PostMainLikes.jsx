@@ -7,7 +7,7 @@ const PostMainLikes = ({ post }) => {
   return (
     <div
       id={`PostMainLikes-${post?.id}`}
-      className="absolute bottom-25 right-0 p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+      className="absolute bottom-[120px] right-[4px] p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
     >
       <div className="flex flex-col items-center justify-center">
         <PostLikes
