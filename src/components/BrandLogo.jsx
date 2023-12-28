@@ -4,14 +4,18 @@ import logo from "../images/tiktok-logo.webp";
 
 const BrandLogo = () => {
   useEffect(() => {
-    // Preload the larger logo image
+    const smallerLogoImage = new Image();
+    smallerLogoImage.src = logoSmall;
+
     const largerLogoImage = new Image();
     largerLogoImage.src = logo;
 
-    // Clean up the image when the component is unmounted
     return () => {
       largerLogoImage.onload = null;
       largerLogoImage.onerror = null;
+
+      smallerLogoImage.onload = null;
+      smallerLogoImage.onerror = null;
     };
   }, []);
 
@@ -30,6 +34,7 @@ const BrandLogo = () => {
           height="34"
           className="cursor-pointer"
           style={{ maxWidth: "100%", height: "auto" }}
+          loading="lazy"
         />
       </picture>
     </>

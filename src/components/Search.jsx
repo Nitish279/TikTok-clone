@@ -9,7 +9,6 @@ const Search = () => {
   const [searchResults, setSearchResults] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
 
-  // Destructure the debounced value from the array
   const [debouncedSearchTerm] = useDebounce(searchQuery, 500);
 
   const handleSearchName = useCallback(({ target: { value } }) => {
@@ -18,7 +17,6 @@ const Search = () => {
 
   useEffect(() => {
     if (!debouncedSearchTerm) {
-      // If no search query, do not display users
       setSearchResults([]);
       return;
     }

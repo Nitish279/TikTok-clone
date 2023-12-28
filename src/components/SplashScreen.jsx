@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logo from "../images/tiktok-logo-small.webp";
 
 const SplashScreen = () => {
+  useEffect(() => {
+    const logoImage = new Image();
+    logoImage.src = logo;
+
+    return () => {
+      logoImage.onload = null;
+      logoImage.onerror = null;
+    };
+  }, []);
   return (
     <div className="flex items-center justify-center h-screen">
       <div className="text-center">

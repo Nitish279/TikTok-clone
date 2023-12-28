@@ -8,7 +8,7 @@
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="short video app" />
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/icon-192x192.png" />
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/images/tiktok-logo-small.8fb50fcb18e1f9bc7082.webp" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/images/tiktok-logo-small.webp" />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.webmanifest" />
   <title>TikTok</title>
   <script>
@@ -16,8 +16,6 @@
       navigator.serviceWorker.register('%PUBLIC_URL%/service-worker.js')
         .then((registration) => {
           console.log('Service Worker registered with scope:', registration.scope);
-
-          // Wait for the service worker to be ready
           return navigator.serviceWorker.ready;
         })
         .then((registration) => {
@@ -33,8 +31,6 @@
         .catch((error) => {
           console.error('Service Worker registration failed:', error);
         });
-
-      // Hide splash screen after 3000 ms (adjust timing as needed)
       setTimeout(() => {
         const splashScreen = document.getElementById('splash-screen');
         if (splashScreen) {

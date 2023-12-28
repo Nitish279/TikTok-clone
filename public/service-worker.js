@@ -11,6 +11,8 @@ const staticAssets = [
   "/static/js/0.chunk.js",
   "/static/js/1.chunk.js",
   "/favicon.ico",
+  "/images/tiktok-logo-small.webp",
+  "/images/tiktok-logo.webp",
   "/static/media/tiktok-logo-small.8fb50fcb18e1f9bc7082.webp",
   "/static/media/tiktok-logo.0148e250a3e768af5ea2.webp",
   "/manifest.json",
@@ -56,7 +58,7 @@ self.addEventListener("fetch", (event) => {
       return (
         cachedResponse ||
         fetch(request).then((response) => {
-          if (response.ok) {
+          if (response.ok && response.status !== 206) {
             const cacheCopy = response.clone();
             caches.open(DYNAMIC_CACHE_NAME).then((cache) => {
               cache.put(request, cacheCopy);
@@ -88,10 +90,8 @@ self.addEventListener("beforeinstallprompt", (event) => {
 
 function showInstallPrompt() {
   console.log("Show custom install prompt UI");
-  // Implement your custom UI logic here
 }
 
-// Cleanup old caches and set cache expiration
 self.addEventListener("activate", (event) => {
   event.waitUntil(
     caches.keys().then((keys) => {
