@@ -21,7 +21,7 @@ const SideNav = ({ isMobile, closeSideNav }) => {
           <Link href="/" onClick={isMobile ? closeSideNav : undefined}>
             <MenuItem
               iconString="For You"
-              colorString={pathname === "/" ? "#0000FF" : ""}
+              colorString={pathname === "/" ? "#ff0000" : ""}
               sizeString="25"
             />
           </Link>
@@ -54,7 +54,7 @@ const SideNav = ({ isMobile, closeSideNav }) => {
           <button
             id="seeAll"
             aria-describedby="seeAll"
-            className="lg:block hidden text-[#0000FF] pt-1.5 pl-2 text-[13px]"
+            className="lg:block hidden text-[#ff0000] pt-1.5 pl-2 text-[13px]"
           >
             See all
           </button>
@@ -82,7 +82,7 @@ const SideNav = ({ isMobile, closeSideNav }) => {
             <button
               id="seeMore"
               aria-describedby="seeMore"
-              className="lg:block hidden text-[#0000FF] pt-1.5 pl-2 text-[13px]"
+              className="lg:block hidden text-[#ff0000] pt-1.5 pl-2 text-[13px]"
             >
               See more
             </button>
